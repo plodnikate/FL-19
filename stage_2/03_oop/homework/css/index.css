@@ -1,0 +1,27 @@
+.hidden{
+    visibility: hidden;
+}
+.characters-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.battle-field{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+header{
+    display: flex;
+    padding-left: 45%;
+}
+.start,
+.fight{
+    display: flex;
+    margin-left: 46%;
+    margin-top: 10px;
+}

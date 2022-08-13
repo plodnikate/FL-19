@@ -1,0 +1,479 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+header{
+    background-color: #FBF9FA;
+}
+main > div:nth-child(2n+1) {
+    background-color: #FBF9FA;
+}
+main > div, footer {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+nav {
+    position: absolute;
+    width: 70%;
+    height: 70px;
+    right: 30px;
+    top:0;
+}
+li {
+    cursor: pointer;
+}
+nav > ul > li {
+    list-style-type: none; 
+    font-weight: 200;
+   }
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}  
+header {
+    display: flex;
+    align-items: center;
+}
+.header-picture {
+    width: 40%;
+}
+.header-picture > img {
+    width: 100%;
+}
+.header-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 60%;
+}
+.header-title span {
+    color: #e2ba7b;
+    font-weight: 300;
+}
+.header-title-text {
+    font-size: 32px;
+    font-weight: 100;
+}
+.header-title-button {
+    margin-top: 30px;
+    border-color: #65aa44;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    font-size: 12px;
+    font-weight: 300;
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+}
+.title { 
+    border-bottom: 1px solid #65aa44;
+    border-left: 8px solid #65aa44;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 5px;
+    margin: 16px 0;
+}
+.description {
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.group-cards {
+    display: flex;
+}
+.group .group-card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding-right: 60px;
+    padding-bottom: 36px;
+}
+.group .group-card-title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 22px;
+    color:#65aa44;
+}
+.group  .group-card-description {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 14px;
+}
+.group .group-card:last-child {
+    margin-right: 0;
+}
+.what-do-we-offer-list-element{
+    display: flex;
+    align-items: center;
+    height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.what-do-we-offer-list-element > img{
+    height: 100%;
+    margin-right: 28px;
+}
+.what-do-we-offer-list > ul {
+    display: flex;
+    max-width: 1150px;
+    justify-content: space-between;
+    padding: 0;
+}
+.what-do-we-offer-list > ul > li {
+    list-style: none;
+}
+.what-do-we-offer-list{
+    height: 30px;
+    padding-bottom: 26px;
+    width: 90%;
+}
+.price{
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+}
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse; 
+}
+table th {
+	font-weight: 500;
+	padding: 5px;
+	border: 2px solid #e2ba7b;
+}
+table td {
+	border: 2px solid #e2ba7b;
+	padding: 5px;
+    text-align: center;
+    font-weight: 200;
+}
+.price > .description > span{
+     font-style: italic;
+}
+.benefits li{
+    font-weight: 100;
+    font-size: 12px;
+    color:#e2ba7b;
+}
+.benefits li span{
+    color: black;
+}
+.benefits{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.our-news{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.our-news .group-card{
+    display: flex;
+    width: 33%;
+    margin-right: 60px;
+    padding-bottom: 36px;
+    background-color: #fff;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 100;
+    box-shadow: 0 0 10px 2px #D3D3D3;
+}
+.our-news .group-card img {
+    height: 110px;
+    width: 90px;
+    margin-right: 14px;
+}
+.group-card-img {
+    display: flex;
+    align-items: center;
+}
+.our-news .group-card-title {
+    font-weight: 400;
+}
+.our-news .group-card-title span {
+    font-style: italic; 
+    color: #808080 ;
+    font-weight: 200;
+}
+.our-news .group-card:last-child{
+    margin-right: 0;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.networks{
+    display: flex;
+    flex-direction: column;
+}
+.linkedin img, .envelope img, .facebook img{
+    width: 28px;
+}
+footer{
+    font-size: 12px;
+    font-weight: 100;
+    background-color: #f5f5f5;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.footer-title{
+    font-weight: bold;
+}
+.networks > div {
+    margin-top: 30px;
+}
+.footer-title{
+    margin-right: 20px;
+}
+.footer-info-2{
+    padding-top: 30px;
+}
+@media (max-width: 768px) {
+    main{
+        font-size: 18px;
+    }
+    .header-picture {
+        width: 80%;
+        right: 0;
+        top: 0;
+    }
+    header{
+        width: 100%;
+    }
+    .header-picture > img {
+        width: 100%;
+    }
+    .header-title {
+        position: absolute;
+        width: 100%;
+        align-items: center;
+    }
+    .header-title-text {
+        font-size: 22px;
+        font-weight: 100;
+        margin-top: 180px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        line-height: 32px;
+    }
+    nav {
+        width: 100%;
+        right: 0;
+        left: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    nav > ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    } 
+    nav > ul > li {
+        width: 25%;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 300;
+       }
+       .header-title-button{
+           width: 120px;
+           font-size: 18px;
+       }
+       .group-cards{
+           flex-direction: column;
+       }
+       .group .group-card{
+           width: 100%;
+       }
+    nav > ul > li {
+        margin-left: 38px;
+       }
+    .what-do-we-offer-list > ul > li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .what-do-we-offer-list > ul {
+        flex-direction: column;
+    }
+    .what-do-we-offer-list-element > img{
+        margin-right: 28px;
+        width: 36px;
+    }
+    .what-do-we-offer-list{
+        display: flex;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .price {
+        display: none;
+    }
+    .our-news .group-cards{
+        flex-direction: column;
+        
+    }
+    .our-news .group-card{
+        width: auto;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 0;
+    }
+    .our-news .group-card img {
+        width: 105px;
+    }
+    .our-news .group-card-description {
+        margin-top: 10px;
+    }
+    .our-news{
+        padding-bottom: 0;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .contacts{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer > div {
+        width: 32%;
+        margin-left: 0;
+    }
+    .networks{
+        flex-direction: row;
+        align-items: end;
+    }
+    .linkedin img, .envelope img, .facebook img{
+        margin-right: 10px;
+        width: 24px;
+    }
+    .networks > div {
+        margin-top: 30px;
+    }
+    .networks > div {
+        margin-top: 2px;
+    }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+    .header-picture {
+        width: 60%;
+        right: 0;
+        top: 0;
+    }
+    .header-picture > img {
+        width: 100%;
+    }
+    .header-title{
+        position: absolute;
+        width: 60%;
+        right: 35px;
+        margin-top: 0;
+    }
+    .header-title-text {
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 40px;
+    }
+    .header-title-button {
+        width: 140px;
+    }
+    nav > ul {
+        justify-content: space-between;
+    }  
+    nav > ul > li {
+        margin-left: 38px;
+       }
+    
+    .what-do-we-offer-list > ul > li{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .what-do-we-offer-list > ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .what-do-we-offer-list-element > img{
+        margin-right: 28px;
+        width: 36px;
+    }
+    .what-do-we-offer-list{
+        display: flex;
+        height: auto;
+
+        padding-bottom: 0px;
+    }
+    .our-news .group-cards{
+        flex-direction: column;
+        
+    }
+    .our-news .group-card{
+        width: 100%;
+        margin-bottom: 30px;
+        width: auto;
+        margin-right: 0;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .our-news .group-card img {
+        width: 105px;
+    }
+    .our-news .group-card-description {
+        margin-top: 10px;
+    }
+    .our-news{
+        padding-bottom: 0;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .contacts{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer > div {
+        width: 32%;
+        margin-left: 0;
+    }
+    .networks{
+        flex-direction: row;
+        align-items: end;
+    }
+    .linkedin img, .envelope img, .facebook img{
+        margin-right: 4px;
+        width: 14px;
+    }
+    .networks > div {
+        margin-top: 30px;
+    }
+    .networks > div {
+        margin-top: 2px;
+    }
+    nav {
+        position: absolute;
+        width: 70%;
+        height: 70px;
+        right: 30px;
+        top:0;
+    }
+    nav > ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }  
+}

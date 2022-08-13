@@ -1,0 +1,606 @@
+@font-face {
+    font-family: "Atlas Grotesk Web Regular";
+    src: url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.eot");
+    src: url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.svg#Atlas Grotesk Web Regular") format("svg");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Atlas Grotesk Web", sans-serif;
+}
+
+.first-section {
+    margin: 40px 40px;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: grid;
+    padding: 10px 80px;
+    grid-template-columns: repeat(5, max-content) 1fr repeat(2, max-content);
+    column-gap: 24px;
+    font-size: 14px;
+}
+
+.header>div {
+    align-self: baseline;
+}
+
+.header span {
+    font-size: 26px;
+    color: #7793aa;
+}
+
+.leafs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 140px;
+    padding-right: 280px;
+    column-gap: 80px;
+}
+
+.leafs img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.circles>div {
+    height: 12px;
+    width: 12px;
+    color: #dcdcdc;
+    border-radius: 50%;
+}
+
+.circles {
+    display: grid;
+    grid-template-columns: repeat(4, 12px);
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.leafs-title {
+    color: #0b9a9b;
+    font-size: 30px;
+
+}
+
+.leafs-title span {
+    border-bottom: 1.6px solid #0b9a9b;
+}
+
+.find-part {
+    display: grid;
+    grid-template: max-content 44px / 2fr 1fr;
+    margin: 30px 0;
+    gap: 16px;
+}
+
+.find-part div {
+    grid-column-start: span 2;
+}
+
+.find-part input {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.find-part button {
+    border: none;
+    background-color: #0b9a9b;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.see {
+    color: #a5823d;
+    font-size: 18px;
+}
+
+.see span {
+    border-bottom: 3px solid #a5823d;
+}
+
+.tranding {
+    display: grid;
+    justify-content: center;
+    grid-template: 100px max-content/ repeat(9, 1fr);
+    padding: 20px 70px;
+    font-size: 14px;
+}
+
+.tranding img {
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.trand-title {
+    grid-column-start: span 9;
+    justify-self: start;
+    margin-left: 70px;
+    color: #e7a729;
+    font-weight: bold;
+}
+
+.tranding div {
+    justify-self: center;
+}
+
+.two-ways {
+    display: grid;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 36px;
+    grid-template: repeat(2, max-content) 300px/ repeat(2, 1fr);
+}
+
+.two-ways img {
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.two-ways-title {
+    grid-column-start: span 2;
+    justify-self: center;
+    font-size: 46px;
+}
+
+.two-ways-title span {
+    border-bottom: 1px solid black;
+}
+
+.two-ways-subtitle {
+    grid-column-start: span 2;
+    justify-self: center;
+    padding-left: 29%;
+    padding-right: 29%;
+}
+
+.two-ways .by {
+    font-style: italic;
+    justify-self: end;
+    grid-column-start: span 2;
+}
+
+.two-ways .img {
+    justify-self: center;
+}
+
+.ways-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 200px;
+    margin-left: 200px;
+    gap: 20px;
+}
+
+.ways-content .title {
+    font-weight: bold;
+}
+
+.autor-words {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.autor-words {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 36px;
+    gap: 40px;
+}
+
+.photos {
+    display: grid;
+    grid-template: repeat(2, 200px)/2fr 1fr;
+    padding-right: 40px;
+}
+
+.photos .main-book {
+    grid-row-start: span 2;
+    justify-self: end;
+}
+
+.photos img,
+.autor-words .content img {
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.autor-words .content img {
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.autor-words .content {
+    padding-top: 46px;
+    display: grid;
+    grid-template: repeat(2, max-content) 60px/1fr 4fr;
+    row-gap: 36px;
+    margin-right: 34%;
+}
+
+.autor-words .content .title,
+.autor-words .content .subtitle {
+    grid-column-start: span 2;
+}
+
+.autor-words .content .title {
+    color: #a5823d;
+    font-size: 26px;
+}
+
+.autor-words .content .subtitle {
+    line-height: 1.3;
+}
+
+.autor-words .content .img {
+    justify-self: end;
+}
+
+.co-autor {
+    align-self: center;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.arrow-right,
+.arrow-left {
+    margin-top: 200px;
+    display: grid;
+    position: absolute;
+    font-size: 40px;
+    width: 84px;
+    height: 84px;
+    background-color: #a5823d;
+    color: white;
+    align-content: center;
+    justify-content: center;
+}
+
+.arrow-right {
+    justify-self: end;
+    margin-right: 60px;
+
+}
+
+.arrow-left {
+    margin-left: 60px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 32%;
+    column-gap: 40px;
+    height: 46px;
+    font-size: 20px;
+}
+
+.start {
+    background-color: #a5823d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.join {
+    color: #a5823d;
+    background-color: white;
+    border: 1.8px solid #a5823d;
+    border-radius: 5px;
+}
+
+.articles {
+    display: grid;
+    grid-template: max-content 60px/4fr 1fr;
+    margin: 20px 20%;
+    column-gap: 160px;
+}
+
+.articles .title {
+    grid-column-start: span 2;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.articles .title span {
+    border-bottom: 1px solid black;
+}
+
+.articles .text {
+    align-content: center;
+}
+
+.articles button {
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: 260px repeat(3, 344px);
+    justify-content: space-between;
+    column-gap: 68px;
+    overflow: hidden;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.pictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.reviews {
+    display: grid;
+    grid-template-rows: 80px max-content ;
+    justify-content: center;
+}
+.stars{
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    justify-content: center;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.reviews .text {
+    grid-column-start: span 7;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.reviews .text span {
+    border-bottom: 1px solid black;
+    color: #3d3d3d;
+}
+
+.star {
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.ideas {
+    margin-top: 20px;
+    display: grid;
+    grid-template: 1px 400px / 400px 1px 400px;
+    justify-content: center;
+}
+
+.ideas .column {
+    grid-column-start: 2;
+    grid-row-start: span 2;
+    background-color: #dbdbdb;
+}
+
+.ideas .row {
+    grid-column-start: span 3;
+    background-color: #dbdbdb;
+    height: 100%;
+
+
+}
+
+.ideas .img {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.ideas img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.ideas .img-text {
+    position: absolute;
+    width: 360px;
+    height: 380px;
+    top: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.ideas .img-text .title {
+    font-size: 24px;
+    color: #009ba7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ideas .img-text .text {
+    text-align: center;
+}
+
+.ideas .img-text .read {
+    font-size: 12px;
+    color: #bc9a5b;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 0.8px dashed #bc9a5b;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-self: center;
+}
+
+.opacity img {
+    opacity: 0.3;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 8px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.tips .title {
+    grid-column-start: span 2;
+    font-size: 18px;
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+.tips .img2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.tips .text {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.line {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+}
+
+.small-text span {
+    color: #dbdbdb;
+}
+
+.footer {
+    display: grid;
+    grid-template: repeat(9, 26px) / repeat(3, 300px);
+    justify-content: center;
+}
+
+.footer .row2 {
+    grid-row-start: span 2;
+}
+
+.footer .row3 {
+    grid-row-start: span 3;
+}
+
+.footer>div {
+    align-self: center;
+}
+
+.footer .title {
+    font-weight: bold;
+    color: #7793aa;
+}
+
+.nature {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 30px;
+    font-style: italic;
+    color: #dfe1e2;
+}
+
+.nature div {
+    width: 1000px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid#dfe1e2;
+}
+
+.nature,
+.footer,
+.greenery {
+    background-color: #f5f5f5;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.greenery {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    gap: 30px;
+    padding-left: 200px;
+    margin-bottom: 60px;
+}
+
+.greenery span {
+    color: #7793aa;
+    font-weight: bold;
+}
+
+.greenery {
+    color: #dfe1e2;
+}
+
+.header div:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.see:hover {
+    color: #e7a729;
+}
+
+.see:hover span {
+    border-color: #e7a729;
+}
+
+.circles>div:hover {
+    color: #818284;
+}
+.arrow-right:hover,
+.arrow-left:hover,
+.start:hover{
+    opacity: 0.6;
+}
+.stars:hover{
+    color:  #e7a729;
+}
+.oil{
+    position: relative;
+}
+.green{
+    background-color: #56785c;
+    opacity: 0.8;
+    position: absolute;
+    height: 348.23px;
+    width: 344px;
+    top: 0;
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 16px;
+    align-content: center;
+    justify-content: center;
+    font-style: normal;
+    color: white;
+    justify-self:flex-end;
+    visibility: hidden;
+}
+.oil .title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.oil:hover .green{
+    visibility: visible;
+}
+
+.tips .text span:hover{
+    color: #009ba7;
+}
+.footer div:hover{
+    color: #a5823d;
+}

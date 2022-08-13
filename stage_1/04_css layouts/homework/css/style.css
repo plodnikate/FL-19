@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+}
+header, main {
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Montserrat";
+}
+header {
+    display: flex;
+    text-transform: uppercase;
+    height: 64px;
+    align-items: center;
+}
+nav {
+    flex:1;
+}
+
+.logo img {
+    height: 30.64px;
+    width: 129px;
+}
+header ul { 
+    list-style-type: none; 
+    display: flex;
+}
+header li {
+    list-style-type: none; 
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+header li > a {
+   text-decoration: none;
+   color: #000000;
+}
+button {
+    background-color: #079FD0;
+    border: 1px solid #079FD0;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    height: 46px;
+    width: 206px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.main-section {
+    display:flex;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.grey-box {
+    display: flex;
+    align-items: center;
+    width: 84%;
+    background-color: #C4C4C4AD;
+}
+
+.grey-box-content {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.grey-box-main-title {
+    font-size: 288px;
+}
+.grey-box-second-title {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+}
+.grey-box-third-title {
+    font-size: 24px;
+    color: white;
+}
+.main-picture-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 100%;
+}
+
+.main-picture-img {
+    width: 46%;
+}
+
+.main-picture-img > img {
+    width: 100%;
+}
+
+.about-ebo-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 110px;
+}
+.about-ebo-row-picture {
+    width: 50%;
+}
+.about-ebo-row-picture > img {
+    width: 100%;
+}
+.about-ebo-row-text {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    width: 50%;
+    align-items: center;
+}
+.about-ebo-main-title {
+    color: #079FD0;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.about-ebo-description {
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height:36px;
+}
+.about-ebo-learn-more > a {
+    text-decoration: none;
+    color: #079FD0;
+    text-transform: uppercase;
+}
+.ebo-can-do {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ebo-can-do-title {
+    width: 100%;
+   font-size: 50px; 
+   color: #079FD0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+.ebo-can-do-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.ebo-can-do-card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-right: 74px;
+}
+.ebo-can-do-cards .ebo-can-do-card:last-child {
+    margin-right: 0;
+}
+
+.ebo-can-do-picture > img {
+    width: 100%;
+}
+.ebo-can-do-column-text {
+    display: flex;
+    flex-direction: column;
+}
+.ebo-can-do-main-title {
+    color: #079FD0;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.ebo-can-do-description {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.ebo-can-do-learn-more > a {
+    text-decoration: none;
+    color: #079FD0;
+    text-transform: uppercase;
+    font-size: 18px;
+    
+}
+.ebo-can-do-learn-more {
+    margin-top: 50px;
+}
+footer{
+    background-color: #C4C4C433;
+    height: 340px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+}
+footer ul {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column;
+}
+footer li {
+    list-style-type: none; 
+    margin-right: 46px;
+    margin-bottom: 25px;
+}
+
+footer li > a {
+   text-decoration: none;
+   color: #000000;
+   font-size: 18px;
+}
+footer .logo {
+    margin-left: 50px;
+    margin-top: 64px;
+}
+.copyright {
+    margin-top: 64px;
+    margin-right: 34px;
+    font-weight: bold;
+}
+.about-us {
+    display: flex;
+    margin-top: 60px;
+}
+.about-us-column {
+    margin-right: 20px;
+}
+.about-us .about-us-column:last-child {
+    margin-right: 0;
+}

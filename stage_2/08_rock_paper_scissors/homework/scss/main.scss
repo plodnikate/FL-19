@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+body{
+    background-color: $base-color;
+    color: $text-color;
+    font-size: 22px;
+}
+.title, .rules, .choice, .round-information, .reset, .round-information{
+    margin-top: $margin;
+    margin-bottom: $margin;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    margin-top: 8%;
+}
+.round-information{
+    flex-direction: column;
+}
+.round-information > div{
+    display: flex;
+    justify-content: center;
+}
+button{
+    cursor: pointer;
+    background-color: $button-color; /* Green */
+    border: none;
+    color: $text-color;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-right: $margin;
+}

@@ -1,0 +1,34 @@
+div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.input{
+    margin-top: 30px;
+}
+.input input{
+    border: 1px solid rgb(13,143,148);
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+.button_group button{
+    margin: 10px;
+    border: none;
+    background-color: rgb(237,209,200);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.big_button button{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-width: 0.1px;;
+    background-color:rgb(208,236,227);
+    font-size: 30px;
+}
+button:hover{
+    cursor: pointer;
+}
+button{
+    color:rgb(13,143,148);
+}
